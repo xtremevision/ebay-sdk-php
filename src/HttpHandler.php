@@ -32,13 +32,13 @@ class HttpHandler
     /**
      * @param \GuzzleHttp\ClientInterface $client The client for making the HTTP request.
      */
-    public function __construct(ClientInterface $client = null)
+    public function __construct(?ClientInterface $client = null)
     {
         $this->client = $client ?: new Client();
     }
 
     /**
-     * @param \Psr7Request|RequestInterface $request
+     * @param RequestInterface $request
      * @param array $options Http options for the client.
      *
      * @return \GuzzleHttp\Promise\PromiseInterface Promise that will be resolved with a

@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 19.3.2 - 2025-06-16
+
+- Fix `get_parent_class()` deprecation on PHP >= 8.3
+
+## 19.3.1 - 2025-06-12
+
+- Fix implicit nullable parameter deprecation on PHP 8.4
+
+## 19.3.0 - 2025-01-10
+
+- Compatibility with `guzzlehttp/promises` v2
+
 ## 19.2.0 - 2024-04-05
 
 - Fix deprecated call to `http_build_query` (https://github.com/BenMorel/ebay-sdk-php/pull/6 by @Wojtazzzz)
